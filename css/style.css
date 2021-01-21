@@ -1,0 +1,286 @@
+/* paramètres HTML */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+:active {
+  outline: none;
+}
+
+body {
+	background-color: #ffffff;
+	cursor: auto;
+  font-family: 'varela round', sans-serif;
+}
+
+header {
+  background-color: #ebffeb;
+}
+
+h1,
+h3,
+h4
+{
+  font-weight: normal;
+  font-family: montserrat, sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* header */
+.phone-info > a {
+  font-weight: bold;
+  font-size: 12px;
+  color: rgb(27, 27, 27);
+  text-decoration: none;
+}
+
+.tel {
+  padding: 2px;
+  width: 22px;
+  height: 22px;
+}
+
+.facebook:hover {
+  opacity: 0.7;
+}
+
+/* navBar */
+.nav-item {
+  font-size: 18px;
+}
+
+.form-control {
+  max-width: 120px;
+}
+
+/* breadcrumb */
+/* .breadcrumb {
+  background-color: #81b381;
+  font-size: 12px;
+  border-radius: 0;
+} */
+
+
+/* animation txt slide & btn */
+h3 {
+  text-shadow: 1px 1px 2px black;
+  margin-top: 60px;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.text-slide {
+  position: relative;
+  animation: mymove 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes mymove {
+  from {right: -500px;}
+  to {right: 0px;}
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* custom btn */
+.first,
+.third {
+  background-color: #b3819a;
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  margin: 15px;
+}
+
+.second {
+  background-color: #81b381;
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  margin: 15px;
+}
+
+/* Featurettes */
+.featurette-divider {
+  margin: 1rem 3rem;
+  background-color: #b3819a;
+}
+
+.featurette-heading {
+  font-family: 'varela round', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #b3819a;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+/* CSS section text */
+p ul {
+  font-family: 'varela round', sans-serif;
+}
+
+ul {
+  font-size: 1.25rem;
+  color: #5d5e5f;
+}
+
+.lead {
+  color: #212529;
+}
+
+.zoom {
+  position: relative;
+  left:10px;
+	width: 300px;
+  height: 200px;
+  padding: 10px 20px 10px 20px;
+}
+
+.children-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.image img {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.image:hover img {
+  -webkit-transform:scale(1.30);
+  -moz-transform:scale(1.30);
+  -ms-transform:scale(1.30);
+  -o-transform:scale(1.30);
+  transform:scale(1.30);
+  }
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: #4d313f;
+  padding: 55px 45px 10px 45px;
+}
+
+.background {
+  background-image: url(/assets/img/pattesDogOpaque.png);
+  background-size: 35%;
+  background-repeat: repeat;
+}
+
+/* mansory dog */
+.card-img {
+  width: 220px;
+  max-width: 100%;
+  opacity: 0.7;
+  border-radius: 12%;
+  box-shadow: 10px 10px 24px -12px rgba(71, 71, 71, 0.897);
+  transition: 0.3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img:hover {
+  opacity: 1;
+	-webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* footer */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #4d313f;
+}
+
+.footer {
+  background: rgba(129,179,129,0.8);
+  
+}
+.footer p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ebffeb;
+}
+
+.footer a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+  color: #ebffeb;
+}
+
+.footer img {
+  width: 15px;
+  height: 15px;
+}
+
+.footerEnd {
+  background: #c2a3b2;
+}
+
+.footerEnd p {
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffebf5;
+  padding-top: 15px;
+}
+
+.footerEnd a {
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffebf5;
+  padding-top: 15px;
+}
+
+/* scrollTop */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#b3819a;
+  opacity: 0.4;
+  color:#ebffeb;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  opacity: 0.4;
+}

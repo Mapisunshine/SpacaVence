@@ -1,4 +1,6 @@
-/* paramètres HTML */
+/* PAGE ACCUEIL */
+
+/* Paramètres HTML */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
@@ -15,7 +17,7 @@
 }
 
 body {
-	background-color: #ffffff;
+  background-color: #ffffff;
 	cursor: auto;
   font-family: 'varela round', sans-serif;
 }
@@ -59,16 +61,103 @@ p {
   font-size: 18px;
 }
 
+.dropdown-item {
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background:#ffebf5;
+}
+
+/* .nav-item:hover {
+  background:  rgba(129,179,129,0.8);
+  opacity: 0.8;
+  border-radius: 5px;
+} */
+
+/* #navbardrop, #navbardrop ul {
+  padding: 0;
+  margin: o;
+  list-style:none;
+  text-align: left;
+}
+
+#navbardrop li {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
+
+#navbardrop ul li {
+  display: inherit;
+  border-radius: 0;
+}
+
+#navbardrop ul li:hover {
+  border-radius: 0;
+}
+
+#navbardrop ul li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+#navbardrop ul {
+  position: absolute;
+  z-index: 1000;
+  max-height: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+}
+
+#navbardrop li:hover ul {
+  max-height: 15em;
+}
+
+#navbardrop li {
+  background-color: #65537A;
+  background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+  background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+  } */
+
 .form-control {
   max-width: 120px;
 }
 
 /* breadcrumb */
-/* .breadcrumb {
-  background-color: #81b381;
-  font-size: 12px;
+ul.breadcrumb {
+  background: rgba(129,179,129,0.8);
   border-radius: 0;
-} */
+  padding: 10px 16px;
+  list-style: none;
+  
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+  
+}
+
+ul.breadcrumb li+li::before {
+  padding: 8px;
+  color: grey;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #4d313f;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+ul.breadcrumb li:hover {
+  color:#b3819a;
+  text-decoration: none;
+}
 
 
 /* animation txt slide & btn */
@@ -283,4 +372,30 @@ h4 {
 #myBtn:hover {
   background-color: #555;
   opacity: 0.4;
+}
+
+/* Page Blog */
+
+
+.blog {
+  font-size: 40px;
+  color:#4d313f;
+}
+
+h6 {
+  text-align: center;
+  padding: 25px 25px;
+}
+
+h5 {
+ border: solid 2px #b3819a;
+ border-radius: 5px;
+ box-shadow: 0 4px 8px 0 rgba(179,129,154, 0.2), 0 6px 20px 0 rgba(179, 129, 154, 0.19);
+ margin: 50px 50px 50px 0;
+ padding: 12px;
+ text-align: center;
+}
+
+hr {
+  border: none;
 }

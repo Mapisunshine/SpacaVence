@@ -1,5 +1,5 @@
+/* .............................................................. */
 /* PAGE ACCUEIL */
-
 /* Paramètres HTML */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 
@@ -69,60 +69,6 @@ p {
   background:#ffebf5;
 }
 
-/* .nav-item:hover {
-  background:  rgba(129,179,129,0.8);
-  opacity: 0.8;
-  border-radius: 5px;
-} */
-
-/* #navbardrop, #navbardrop ul {
-  padding: 0;
-  margin: o;
-  list-style:none;
-  text-align: left;
-}
-
-#navbardrop li {
-  display: inline-block;
-  position: relative;
-  border-radius: 8px 8px 0 0;
-}
-
-#navbardrop ul li {
-  display: inherit;
-  border-radius: 0;
-}
-
-#navbardrop ul li:hover {
-  border-radius: 0;
-}
-
-#navbardrop ul li:last-child {
-  border-radius: 0 0 8px 8px;
-}
-
-#navbardrop ul {
-  position: absolute;
-  z-index: 1000;
-  max-height: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  -moz-transition: .8s all .3s;
-  -webkit-transition: .8s all .3s;
-  transition: .8s all .3s;
-}
-
-#navbardrop li:hover ul {
-  max-height: 15em;
-}
-
-#navbardrop li {
-  background-color: #65537A;
-  background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
-  background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
-  } */
-
 .form-control {
   max-width: 120px;
 }
@@ -131,34 +77,33 @@ p {
 ul.breadcrumb {
   background: rgba(129,179,129,0.8);
   border-radius: 0;
-  padding: 10px 16px;
+  padding: 5px 15px 25px 15px;
   list-style: none;
-  
+  margin:0;
+  height: 28px;
 }
 
 ul.breadcrumb li {
   display: inline;
   font-size: 12px;
-  
 }
 
-ul.breadcrumb li+li::before {
+ul.breadcrumb li+li::before,
+li.breadcrumb-item a {
   padding: 8px;
   color: grey;
   content: "/\00a0";
 }
 
-ul.breadcrumb li a {
+ul.breadcrumb .active a {
   color: #4d313f;
   font-weight: 600;
   text-decoration: underline;
 }
 
 ul.breadcrumb li:hover {
-  color:#b3819a;
   text-decoration: none;
 }
-
 
 /* animation txt slide & btn */
 h3 {
@@ -202,6 +147,25 @@ h3 {
   color: #ffffff;
   padding: 15px;
   margin: 15px;
+}
+
+/* scrolling banner */
+.banner {
+  padding: 20px 0 25px 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold ;
+  height: 75px;
+  text-align: center;
+}
+
+.bannerDef {
+  color: #b3819a;
+  text-shadow: 1px 1px 2px rgba(179,129,154,0.8);
+}
+
+.bannerDef:hover {
+  color: #ffd6eb;
 }
 
 /* Featurettes */
@@ -337,13 +301,7 @@ h4 {
   background: #c2a3b2;
 }
 
-.footerEnd p {
-  font-size: 11px;
-  font-weight: 400;
-  color: #ffebf5;
-  padding-top: 15px;
-}
-
+.footerEnd p,
 .footerEnd a {
   font-size: 11px;
   font-weight: 400;
@@ -374,9 +332,9 @@ h4 {
   opacity: 0.4;
 }
 
+
+/* ............................................... */
 /* Page Blog */
-
-
 .blog {
   font-size: 40px;
   color:#4d313f;
@@ -399,3 +357,75 @@ h5 {
 hr {
   border: none;
 }
+
+/* ................................................ */
+/* Page Contact */
+.form-horizontal {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(179,129,154, 0.2), 0 6px 20px 0 rgba(179, 129, 154, 0.19);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  font-weight: 600;
+  background-color: #ffebf5;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  font: 300 2rem 'varela round', sans serif;
+  letter-spacing: 6px;
+  margin-bottom: 25px;
+}
+
+#contact {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  border: solid 2px #b3819a;
+  box-shadow: 0 4px 8px 0 rgba(179,129,154, 0.2), 0 6px 20px 0 rgba(179, 129, 154, 0.19);
+}
+
+#contact:focus {
+  outline: none;
+  border: solid 2px #b3819a;
+  box-shadow: 0 4px 8px 0 rgba(179,129,154, 0.2), 0 6px 20px 0 rgba(179, 129, 154, 0.19);
+}
+
+textarea {
+  max-width: 400px;
+  letter-spacing: 1px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 45px;
+  width: 90px;
+  background-color: #4d313f;
+  color: #ffffff;
+  border-radius: 7px;
+  font: 300 14px;
+  letter-spacing: 1px;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  color: #4d313f;
+  border: #4d313f;
+  background-color: #ffd6eb;
+}
+
+

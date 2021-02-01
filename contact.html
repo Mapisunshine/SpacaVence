@@ -60,14 +60,14 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="/evenements.html" id="navbardrop" data-toggle="dropdown">Blog</a>
+                    <a class="nav-link dropdown-toggle" href="/evenements.html" id="navbardrop" data-toggle="dropdown">Blog</a>
                     <div class="dropdown-menu">
                       <a href="/evenements.html" class="dropdown-item">Évènementiel</a>
                       <a href="#" class="dropdown-item">Actions</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link active" href="/contact.html">Contact</a>
                   </li>
                 </ul>
 
@@ -83,11 +83,10 @@
 
       <div class="container-fluid">
         <div class="row">
-          <nav class="col-12 p-0" aria-label="breadcrumb" style="height: 32px;">
+          <nav class="col-12 p-0" aria-label="breadcrumb">
             <ul class="breadcrumb">
               <li class="breadcrumb-item" aria-current="page"><a href="/accueil.html">Accueil</a><li>
-              <li class="breadcrumb-item" aria-current="page">Blog<li>
-              <li class="breadcrumb-item active" aria-current="page"><a href="/evenements.html">Évènementiel</a><li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="/contact.html">Contact</a><li>
             </ul>
           </nav>
         </div>
@@ -96,59 +95,54 @@
     </header>
 
     <main>
-      <div class="slider"> 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/img/SpacaBlog.png" class="d-block w-100" alt="dog">
-            <div class="container">
-              <div class="carousel-caption text-md-center">
-                <h3 class="text-slide blog">Les évènements à venir</h3>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div>
-
       <div class="container-fluid">
-        <div class="row p-5 align-items-start">
-          <div class="col-lg-9 col-xs-10">
-            <h5>*** PROCHAINEMENT ***</h5>
-            <a href="/assets/img/Flyer JPO SPACA.pdf" target="_blanck" aria-label="JPO" title="Affiche JPO" rel="noopener noreferrer">
-            Cliquez sur le lien pour télécharger l'invitation</a>
-            <hr>
-            <p>Partagez l'évènement avec vos ami(e)s</p>
-            <hr>
-            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fspacavence%2F&layout=button_count&size=large&width=123&height=28&appId" width="123" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <hr>
-            <video width="550" height="950" autoplay controls muted>
-              <source src="/assets/img/Flyer JPO SPACA.mp4" type="video/mp4"></source>
-            </video>
-          </div>
-          <div class="col-lg-3 col-xs-2">
-            <h5>ARCHIVES</h5>
-              <ol class="list-unstyled mt-2 mb-5">
-                <li><a href="#">Janvier 2021</a></li>
-                <li><a href="#">Décembre 2020</a></li>
-                <li><a href="#">Novembre 2020</a></li>
-              </ol>
-            <h5>ARTICLES</h5>
-              <ol class="list-unstyled mt-2">
-                <li><a href="#">J.P.O. 2021</a></li>
-                <li><a href="#">J.P.O. 2020</a></li>
-              </ol>
-            
-          </div>
+        <div class="row">
+          <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+          padding: 0;"></div>
         </div>
       </div>
 
-
-
-
-
-
-
-
-
+      <div class="container">
+        <div class="row pl-3">
+          <div class="col-lg-4 justify-content-center">
+            <h5>FORMULAIRE DE CONTACT</h5>
+            <p>Pour toutes demandes d’informations, vous pouvez nous joindre par téléphone au 04.93.24.08.45 ou nous envoyer un message via notre formulaire, nous vous répondrons dans les meilleurs délais.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact-wrapper">
+              <form class="form-horizontal" method="post" action="contact.php">
+                <h6 class="section-header">Des questions ?</h6>
+        
+                <label for="name">Votre nom</label>
+                <input type="text" id="contact" placeholder="nom" name="name" required>
+                
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="contact" placeholder="email@mail.com" name="email" required>
+                        
+                <label for="object">Objet</label>
+                <select id="contact" name="object">
+                  <option value="default">Choisissez une catégorie</option>
+                  <option value="information">Renseignements</option>
+                  <option value="sponsorship">Parrainage</option>
+                  <option value="adoption">Adoption</option>
+                  <option value="other">Autres</option>
+                </select>
+                
+                <label for="message">Message</label>
+                <textarea rows="10" id="contact" name="message" required></textarea>
+        
+                <button class="send-button" id="contact" type="submit">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="container-fluid">
         <div class="row">

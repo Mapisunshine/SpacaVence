@@ -1,1 +1,1 @@
-mapisunshine.github.io/spacavence/
+mapisunshine.github.io/spacavence06/

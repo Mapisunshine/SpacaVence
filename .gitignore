@@ -1,8 +1,0 @@
-# ignorer fichier node-modules
-/node_modules
-
-# ignorer fichier bootstrap
-/bootstrap-4.5.3-dist
-
-# ignorer package .json
-package-lock.json

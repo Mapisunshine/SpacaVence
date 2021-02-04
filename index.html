@@ -34,7 +34,7 @@
           <div class="col-12 justify-content-start text-left">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a id="logo" class="navbar-brand" href="https://spacavence.fr/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/img/Logo-spaca.png" alt="S.P.A.C.A." width="60%" height="60%">
+                <img class ="img-fluid" src="/assets/img/Logo-spaca.png" alt="S.P.A.C.A." width="180" height="180">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -49,10 +49,10 @@
                     <a class="nav-link active" href="/index.html">Accueil<span class="sr-only">(current)</span></a>
                   <li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Notre refuge</a>
+                    <a class="nav-link" href="#">Le refuge</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Nos animaux</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Nos chiens</a>
                     <div class="dropdown-menu">
                       <a href="#" class="dropdown-item">Nos chiens à adopter</a>
                       <a href="#" class="dropdown-item">Nos chiens à parrainer</a>
@@ -73,7 +73,7 @@
 
                 <form class="form-inline my-2 my-lg-0">
                   <input class="form-control mr-sm-2" type="search" placeholder="&#128269;" aria-label="search">
-                  <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                  <button id="btn-navbar" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
             </nav>
@@ -133,48 +133,61 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
           padding: 0;"></div>
         </div>
       </div>
       
       <div class="container-fluid" style="background-color: #ebffeb">
         <div class="row align-items-center justify-content-center ">
-          <div class="col-md-2 text-center p-3">
-            <button type="button" class="first btn btn-outline-secondary"><i class="fas fa-user-friends"></i> Adhérer</button>
+          <div class="col-md-2 text-center p-3 btn-accueil">
+            <a aria-label="link to Adhesion" href="/assets/img/Bulletin Adhésion dépliant Interactif.pdf" target="_blank" title="Adhésion" rel="noopener noreferrer" style="text-decoration:none"><button type="button" class="first btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto"><i class="fas fa-user-friends"></i> Adhérer</button></a>
           </div>
           <div class="col-md-2 text-center p-3">
-            <button type="button" class="second btn btn-outline-secondary"><i class="fas fa-credit-card"></i> Participer</button>
+            <button type="button" class="second btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto"><i class="fas fa-credit-card"></i> Participer</button>
           </div>
           <div class="col-md-2 text-center p-3">
-            <button type="button" class="third btn btn-outline-secondary"><i class="fas fa-heart"></i> Adopter</button>
+            <a aria-label="link to formulaire" href="https://forms.gle/gCcdNpkk7t6YLvhN6" target="_blank" title="Formulaire Adoption" rel="noopener noreferrer" style="text-decoration:none"><button type="button" class="third btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto"><i class="fas fa-heart"></i> Adopter</button></a>
           </div>
         </div>
       </div>
       
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
+          padding: 0;"></div>
+          <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
+          padding: 0;"></div>
+        </div>
+      </div>
+
       <div class="container-fluid" style="background: rgba(129,179,129,0.8)">
         <div class="row banner align-items-center justify-content-center">
           <marquee>
-            <a class ="bannerDef" href="/evenements.html">✪ CLIQUEZ ICI - PROCHAINEMENT "JOURNÉES PORTES OUVERTE"S ✪</a>
+            <a class ="bannerDef" href="/evenements.html">✪ PROCHAINEMENT INVITATION AUX "JOURNÉES PORTES OUVERTES" ✪</a>
           </marquee>
         </div>
       </div>
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
           padding: 0;"></div>
-          <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+          <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
           padding: 0;"></div>
         </div>
       </div>
@@ -193,7 +206,7 @@
           </div>
         </div>
         <hr class="featurette-divider">
-        <div class="row p-5 align-items-center justify-content-center">
+        <div class="row pb-5 px-5 align-items-center justify-content-center">
           <div class="col-md-9">
             <h2 class="featurette-heading">Que faisons-nous ?</h2>
             <p class="lead">
@@ -211,13 +224,13 @@
       <section class="background">
         <div class="container-fluid">
           <div class="row">
-            <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
             padding: 0;"></div>
           </div>
         </div>
@@ -226,7 +239,8 @@
           <h1>L'ADOPTION DE VOTRE FUTUR ANIMAL<br> DE COMPAGNIE</h1>
           <div class="row p-3 align-items-start justify-content-around">
             <div class="zoom col-md-6 m-4">
-              <div class="image"><img src="/assets/img/landscape-tree-forest-grass-girl-lawn-1268241-pxhere.com.jpg" alt="children-with-dog" class="children-img">
+              <div class="image">
+                <img class="img-fluid" src="/assets/img/landscape-tree-forest-grass-girl-lawn-1268241-pxhere.com.jpg" alt="children-with-dog" >
               </div>
             </div>
             <div class="col-md-4 m-4">
@@ -269,13 +283,13 @@
       <section>
         <div class="container-fluid">
           <div class="row">
-            <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
             padding: 0;"></div>
           </div>
         </div>
@@ -303,13 +317,13 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col" style="height: 10px; min-height: 10px; background: #b3819a; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #b3819a; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffd6eb; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffd6eb; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #ffebf5; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #ffebf5; vertical-align: top;
             padding: 0;"></div>
-            <div class="col" style="height: 10px; min-height: 10px; background: #81b381; vertical-align: top;
+            <div class="col" style="height: 8px; min-height: 8px; background: #81b381; vertical-align: top;
             padding: 0;"></div>
           </div>
         </div>
@@ -318,8 +332,8 @@
 
     <footer>
       <div class="container-fluid">
-        <div class="row pl-5 footer align-items-start justify-content-center">
-          <div class="col-md-3 col-sm-6 p-4">
+        <div class="row footer align-items-start justify-content-around px-3">
+          <div class="col-md-3 col-sm-6 p-3">
             <h4>NOUS CONTACTER</h4>
             <p>REFUGE SPACA<br>
               3192, Chemin du Riou<br>
@@ -330,18 +344,18 @@
               <a href="mailto:refugespaca06@hotmail.com">refugespaca06@hotmail.com</a>
           </div>
 
-          <div class="col-md-3 col-sm-6 p-4">
+          <div class="col-md-3 col-sm-6 p-3">
             <h4>NOUS TROUVER</h4>
-            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.236640729885!2d7.12588011521265!3d43.7471824791181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdcd0ef77b3ad1%3A0xebf7a0a231e1275b!2s3192%20Chemin%20du%20Riou%2C%2006140%20Vence!5e0!3m2!1sfr!2sfr!4v1582661284889!5m2!1sfr!2sfr" width="180px" height="180px" frameborder="0" allowfullscreen=""></iframe>
+            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.236640729885!2d7.12588011521265!3d43.7471824791181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdcd0ef77b3ad1%3A0xebf7a0a231e1275b!2s3192%20Chemin%20du%20Riou%2C%2006140%20Vence!5e0!3m2!1sfr!2sfr!4v1582661284889!5m2!1sfr!2sfr" width="180" height="180"></iframe>
           </div>
 
-          <div class="col-md-3 col-sm-6 p-4">
+          <div class="col-md-3 col-sm-6 p-3">
             <h4>HORAIRES</h4>
             <p>Le refuge est ouvert tous les jours 7j/7 de 14:00 à 17:00 h</p>
             <a aria-label="link to CNSPA" href="https://cnspa.fr" target="_blank" title="CNSPA" rel="noopener noreferrer">Refuge affilié à la Confédération Nationale - Défense de l'animal "CNSPA"</a>
           </div>
 
-          <div class="col-md-3 col-sm-6 p-4">
+          <div class="col-md-3 col-sm-6 p-3">
             <h4>LIENS UTILES</h4>
             <ul>
               <li><a aria-label="link to formulaire" href="https://forms.gle/gCcdNpkk7t6YLvhN6" target="_blank" title="Formulaire Adoption" rel="noopener noreferrer">Formulaire d'adoption en ligne</a><br></li>
